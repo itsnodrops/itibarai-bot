@@ -1,0 +1,31 @@
+{
+  "name": "itibarai-bot",
+  "version": "1.0.0",
+  "description": "Automation script for RabitiAI tasks.",
+  "main": "app.js",
+  "type": "module",
+  "author": "itsnodrops",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.1",
+    "figlet": "^1.7.0",
+    "user-agents": "^1.1.275"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsnodrops/itibarai-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itsnodrops/itibarai-bot/issues"
+  },
+  "homepage": "https://github.com/itsnodrops/itibarai-bot#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "logs": "node -e \"require('fs').createReadStream('./src/utils/points.log').pipe(process.stdout)\"",
+    "reset-ua": "node -e \"require('fs').writeFileSync('./src/utils/useragents.json', '{}', 'utf-8')\"",
+    "reset-log": "node -e \"require('fs').writeFileSync('./src/utils/points.log', '', 'utf-8')\""
+  }
+}
